@@ -2,7 +2,7 @@
 <head>
 <title>trendquiz</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<script type="text/javascript" src="scripts/jquery-2.1.0.min.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 <link rel="icon" type="image/ico" href="images/favicontrend.ico">
 <link rel="stylesheet" type="text/css" href="themes/reset.css">
@@ -12,20 +12,15 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta property="og:image" content="http://trendquiz.com/data/logo.png"> <!-- for thumbnails -->
-<link rel="stylesheet" media="screen and (max-device-width: 799px) and (orientation : portrait)" href="themes/phonestyle.css"/>
+<link rel="stylesheet" media="screen and (max-device-width: 600px) and (orientation : portrait)" href="themes/phonestyle.css"/>
 </head>
 
 <body>
-
-<!--
-<div id="header2"></div>
--->
 
 <div id="header2" class="header"> 
     <div id="title"><span style="vertical-align:middle;">trendquiz:</span> <span id="smallheadtext"> every graph is a story</span></div>
 </div>
 
-<!-- for various thumbnails?will this work? -->
 <img src="data/logo.png" style="display:none;">
 
 <div id="descriptivetext">
@@ -55,7 +50,6 @@
             <label class="btn btn-primary" id="select_all"><input type="checkbox">select all</label>
         </div>
         <br><br>
-        <!-- thanks http://proto.io/freebies/onoff/ -->
         <div class="onoffswitch">
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
             <label class="onoffswitch-label" for="myonoffswitch">
@@ -73,7 +67,7 @@
 </center>
 
 <footer id="footer">
-    <a href="http://ebcmsoftware.com">&copy; EBCM Software 2014</a> | 
+    <a href="http://ebcmsoftware.com">&copy; EBCM Software 2015</a> | 
     <a href = "http://ebcmsoftware.com/donate/"> Donate </a> | 
     Data Source: <a href="http://google.com/trends">Google Trends</a> | 
     <a href="game/about.html" id="aboutpage">About Trendquiz</a>
