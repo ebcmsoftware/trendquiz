@@ -1,0 +1,166 @@
+/*universal styles*/
+#header2 {
+    display:none !important;
+}
+
+#header {
+    font-size:2em;
+}
+
+footer,
+#footer{
+  display: none !important;
+}
+
+.gameButton{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+  border: 0px solid black;
+  margin: 0 auto;
+  width: 50%;
+  overflow: visible;
+  padding: 10px 5px;
+  border-radius: 0px;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.btn-primary{
+    font-size: 100%;
+    border-radius: 0px;
+}
+
+body{
+  color: #EEF2F3;
+  background-color: #3698d9;
+  font-family:'Raleway' , sans-serif;
+  font-size: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*tq.html*/
+
+#selectallbutton{
+  margin: 5px 0 5px 0;
+}
+
+#controltext{
+  display: none;
+}
+
+#categorysettings{
+  width: 90%;
+}
+
+#descriptivetext{
+  display: none;
+  font-size: 1.2em;
+  margin: 0 auto;
+  width:; 95%;
+  padding:0;
+}
+
+#categorytext{
+  font-size: 1em;
+}
+
+/*index.html*/
+#LRcontainer{
+  width: 100%;
+  max-width:2000px;
+  margin: 0 auto;
+}
+
+#leftanswer{
+  border-right: 2px solid black;
+}
+
+#rightanswer{
+  border-left: 2px solid black;
+}
+
+#chartcontainer{
+  cursor:default;
+  border: 0px solid black;
+  margin: 0;
+  height: 300px;
+  width: 100%;
+}
+
+#gamecontrols{
+  width: 90%;
+  max-width:2000px;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+#strikes{
+  clear: both;
+  cursor:default;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#timercontainer{
+  clear:both;
+  width: 60%;
+  margin: 10px auto 0 auto;
+  float: top;
+}
+
+#stats{
+  width: 100%;
+}
+
+#endtext{
+  width: 95%;
+}
+
+#pausebutton {
+  float: right;
+  text-align: right;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#score{
+  font-size: 1.5em;
+}
+
+#footer{
+  display: none !important;
+}
+
+#playbutton{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#selectallbutton{
+  width: 60%;
+  margin: 10px 0 15px 0;
+}
+
+#endtext{
+  float: left;
+  width: 60%;
+  margin: 15px auto 0 auto;
+  font-size: 1.5em;
+}
+
+/* eric's perfect code */
+.blink {
+    display:none !important;
+}
+

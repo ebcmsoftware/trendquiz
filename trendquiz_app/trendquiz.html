@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>trend|quiz</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="data/jquery-2.1.0.min.js" ></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+<link rel="icon" type="image/ico" href="data/favicontrend.ico">
+<link rel="stylesheet" type="text/css" href="data/reset.css">
+<link href='data/raleway.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="data/style.css">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" media="screen and (max-device-width: 799px) and (orientation : portrait)" href="data/phonestyle.css"/>
+
+</head>
+<body>
+<div id="header"> 
+    <div id="title"><span style="vertical-align:middle;">trend|quiz:</span> <span id="smallheadtext"> every graph is a story</span></div>
+</div>
+
+<div id = "phonemessage" > Click "Add To Homescreen" in settings for best performance! </div>
+
+<div id="descriptivetext">
+    <h1 style="font-size: 1.3em; margin: 10px 0 10px 0; text-align: left;"> trend|quiz has 3 rules:</h1> 
+    <ol id = "rules" style = "text-align:left">
+        <li>1. get points for choosing correct search term</li> 
+        <li>2. get a strike for choosing wrong term</li> 
+        <li>3. get three strikes and it's game over</li>
+    </ol>  
+</div>
+
+<p id = "categorytext" style="text-align: center; margin-top: 15px">select some categories:</p>
+<center>
+    <div id = "categorystuff">    
+        <div id="categorysettings" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary"><input type="checkbox" id="politics" >politics</label>
+            <label class="btn btn-primary"><input type="checkbox" id="sports" >sports</label>
+            <label class="btn btn-primary"><input type="checkbox" id="tech" >technology</label>
+            <label class="btn btn-primary"><input type="checkbox" id="internet_memes" >internet</label>
+            <label class="btn btn-primary"><input type="checkbox" id="visualmedia" >movies and tv</label>
+            <label class="btn btn-primary"><input type="checkbox" id="music" >music</label>
+            <label class="btn btn-primary"><input type="checkbox" id="misc_seasonal" >other</label>
+        </div>
+
+        <div id = "selectallbutton" class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="btn btn-primary" id="select_all"><input type="checkbox">select all</label>
+        </div>
+        <div id="playbutton" class="gameButton">  play!  </div>
+        <script src="data/trendquiz.js"></script>
+        <p id = "controltext" style="position:relative;margin: 0 auto;font-size:2em;text-align:center;">
+        <span  style = "font-size:1.3em;">Controls:</span> use arrow keys or the mouse to select answers, and hit space to pause.
+        </p>
+    </div>
+</center>
+
+<footer id = "footer"><a href="http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2014</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank"> Donate </a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a>
+</footer>
+<script type="text/javascript" src="data/script.js"></script>
+</body>
+
+</html>

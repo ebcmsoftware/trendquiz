@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>trend|quiz</title>
+<link rel="icon" type="image/ico" href="favicontrend.ico">
+<link href='raleway.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<script language="javascript" type="text/javascript" src="jquery-2.1.0.min.js"></script>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="facebook.css">
+ <link rel="stylesheet" media="screen and (max-device-width: 799px) and (orientation : portrait)" href="phonestyle.css"/>
+</head>
+<body>
+<!-- header -->
+<div id="header">
+    <div id="title"><span style="vertical-align:middle;">trend|quiz:</span> <span id="smallheadtext"> every graph is a story</span></div>
+</div>
+<!-- congrats text -->
+
+<div id = "endtext"><span id="congrats"></span>, you got <span id = "endscore" class="TQnum" style="font-weight:bold;"></span> on trend|quiz! 
+    <span id="score_record" style="display:none;">That's a high score!</span>
+    <br>Share with your friends!
+</div>
+
+<!-- social buttons
+<div id = "socialbuttons" style = "margin-top: 0">
+    <span class='st_facebook_large' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='Facebook'></span>
+    <span class='st_twitter_large' st_via='' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='Tweet'></span>
+    <span class='st_googleplus_large' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='Google+'></span>
+    <span class='st_tumblr_large' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='Tumblr'></span>
+    <span class='st_reddit_large' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='Reddit'></span>
+    <span class='st_stumbleupon_large' st_title="Go check out this awesome game I just found, TrendQuiz!" st_url="http://trendquiz.com" displayText='StumbleUpon'></span>
+</div>
+-->
+
+<!-- statistics -->
+<div id="stats">
+    <h1 style="font-size:1.6em; text-align: left; margin-bottom: 20px">Statistics:</h1>
+    <table style = "width = 100%; margin: 0 auto" >
+        <tr>
+            <td style = "width: 33%">
+                THIS RUN<br><br>
+
+                Score: <span id="this_run_score" class="TQnum">0</span> <br>
+                <br>
+                Questions correct: <span id="num_answered" class="TQnum">0</span> <br>
+                <br>
+                Points per question: <span id="ppq" class="TQnum">0</span> <br>
+            </td>
+            <td style = "width: 33%">
+                YOUR RECORDS<br><br>
+
+                Score: <span class="TQnum" id="score_best">0</span> <br>
+                <br>
+                Questions correct: <span class="TQnum" id="num_answered_best">0</span><br>
+                <br>
+                Points per question: <span class="TQnum" id="ppq_best">0</span><br>
+
+            </td>
+            <td style = "width: 33%">
+                GLOBAL RECORDS<br><br>
+                Score: <span id="score_global_record"></span> - <span class="TQnum" id="score_global"></span><br>
+                <br>
+                Questions correct: <span id="num_answered_global_record"></span> - <span class="TQnum" id="num_answered_global"></span><br>
+                <div id="nameform" style="display:none;">
+                  <input type="text" value="Anonymous" id="user_name">
+                  <button class = "gameButton" id="sendname" style = "font-size: .5em">Submit name</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<a href = "../trendquiz.html" style="text-decoration: none;">
+    <div id="playagain" class="gameButton">Play Again!</div>
+</a>
+
+<!--
+<div id="begging" class="begging" style="text-align:center;margin:0 auto;width:60%;font-size:2em;">
+  Sponsored links:
+  <script type="text/javascript" src="http://cdn.chitika.net/getads.js" async></script>
+</div>
+-->
+
+<footer id = "footer"><a href="http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2014</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank">Donate</a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a> | <a href="javascript:;" id="deleterecords" style="color:#EE2233;text-decoration:underline;">Delete Personal Records</a>
+</footer>
+<script type="text/javascript" src="scorescreen.js"></script>
+</body>
+</html>

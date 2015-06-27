@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "trend|quiz",
+  "description": "A trivia game about search trend graphs",
+  "version": "1",
+
+  "icons": {
+    "128": "128.png"
+  },
+
+  "app": {
+    "scripts": ["background.js"],
+    "launch": {
+      "local_path": "trendquiz.html"
+    }
+  },
+
+  "web_accessible_resources": [
+    "trendquiz.html",
+    "bootstrap/*",
+    "128.png",
+    "data/*"
+  ],
+  
+  "permissions": [
+    "storage",
+    "notifications"
+  ]
+}

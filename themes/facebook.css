@@ -1,0 +1,26 @@
+.fb-share-button { 
+    width: 80px; 
+}
+.fb-share-button span, 
+.fb-share-button iframe {
+    width: 80px !important;
+    height: 20px !important;
+}
+
+#stwrapper{
+    display:none;
+    visibility:hidden;
+}
+.stwrapper{
+    display:none;
+}
+
+body{
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+

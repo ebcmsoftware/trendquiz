@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>trendquiz</title>
+  <link rel="icon" type="image/ico" href="../images/favicontrend.ico">
+  <link href='../themes/raleway.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../themes/reset.css">
+  <link rel="stylesheet" type="text/css" href="../themes/style.css">  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="../themes/facebook.css">
+  <link rel="stylesheet" media="screen and (max-device-width: 799px) and (orientation : portrait)" href="../themes/phonestyle.css"/>
+</head>
+
+<body>
+<!-- header -->
+<div id="header2">
+    <div id="title"><span style="vertical-align:middle;">trendquiz:</span> <span id="smallheadtext"> every graph is a story</span></div>
+</div>
+
+<!-- congrats text -->
+<div id="SStop">
+    <div id="SSl">
+      <div id="endtext">
+        <span id="congrats"></span>, you got
+        <span id = "endscore" class="TQnum" style="font-weight:bold;"></span>
+        on trendquiz! 
+        <span id="score_record" style="display:none;">That's a high score!</span>
+        <br>
+        <br>
+        <span> Share your score: </span>
+      </div>
+    </div>
+    <div id="SSr">
+      <div id="scorechart">THIS IS THE CHART</div>
+    </div>
+</div>
+
+<div id = "SSbottom">
+    <div id="playagain" class="gameButton" onclick="window.location.href='../trendquiz.html';">Play Again!</div>
+    <div id= "share_donate">
+      <h3>Share the game with your friends!</h3>
+      <!-- #readable -->
+      <div id="t2">
+    <!-- twier -->
+          <a href="https://twitter.com/share" id="t3" class="twitter-share-button" data-url="http://trendquiz.com" data-text="I found a cool game! Check it out:" data-size="large" data-count="none" data-dnt="true">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!-- fb -->
+    <iframe src="http://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Ftrendquiz.com%2F&amp;layout=button" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:20;width:55;" allowTransparency="true"></iframe>
+    </div>
+      <br>
+      <h3>Or, <a href="http://ebcmsoftware.com/donate/" target="_blank" style="text-decoration:underline;">Donate Here</a>
+           (servers aren't free!)
+      </h3>
+    </div>
+</div>
+
+<footer id = "footer" class = "SSfooter"><a href="http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2014</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank">Donate</a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a> | <a href="javascript:;" id="deleterecords" style="color:#EE2233;text-decoration:underline;">Delete Personal Records</a>
+    <!--
+<footer id = "footer" class = "SSfooter"><a href="http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2014</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank">Donate</a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a>
+-->
+</footer>
+<script src="../scripts/highcharts.js"></script>
+<script type="text/javascript" src="../scripts/scorescreen.js"></script>
+</body>
+</html>
+

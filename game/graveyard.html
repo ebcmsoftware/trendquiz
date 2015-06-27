@@ -1,0 +1,40 @@
+<!-- disabled for chrome app -->
+
+<!-- statistics -->
+
+<div id="stats">
+    <h1 style="font-size:1.6em; text-align: left; margin-bottom: 20px">Statistics:</h1>
+    <table style = "width = 100%; margin: 0 auto" >
+        <tr>
+            <td style = "width: 33%">
+                THIS RUN<br><br>
+
+                Score: <span id="this_run_score" class="TQnum">0</span> <br>
+                <br>
+                Questions correct: <span id="num_answered" class="TQnum">0</span> <br>
+                <br>
+                Points per question: <span id="ppq" class="TQnum">0</span> <br>
+            </td>
+            <td style = "width: 33%">
+                YOUR RECORDS<br><br>
+
+                Score: <span class="TQnum" id="score_best">0</span> <br>
+                <br>
+                Questions correct: <span class="TQnum" id="num_answered_best">0</span><br>
+                <br>
+                Points per question: <span class="TQnum" id="ppq_best">0</span><br>
+
+            </td>
+            <td style = "width: 33%">
+                GLOBAL RECORDS<br><br>
+                Score: <span id="score_global_record"></span> - <span class="TQnum" id="score_global"></span><br>
+                <br>
+                Questions correct: <span id="num_answered_global_record"></span> - <span class="TQnum" id="num_answered_global"></span><br>
+                <div id="nameform" style="display:none;">
+                  <input type="text" value="Anonymous" id="user_name">
+                  <button class = "gameButton" id="sendname" style = "font-size:0.5em">Submit name</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
