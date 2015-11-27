@@ -1,64 +1,50 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-	<title>trendquiz</title>
-	<link rel="icon" type="image/ico" href="favicontrend.ico">
-  <link href='../themes/raleway.css' rel='stylesheet' type='text/css'>
+	<title>Trendquiz</title>
+	<link rel="icon" type="image/ico" href="../images/favicontrend.ico">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>  
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../themes/reset.css">
 	<link rel="stylesheet" type="text/css" href="../themes/style.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" media="screen and (max-device-width: 799px) and (orientation : portrait)" href="../themes/phonestyle.css"/>
-  
-  <meta name="description" content= "a game about trends and their graphs">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="../themes/phonestyle.css"/> 
+  <meta name="description" content= "A game about trends and their graphs">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta name="mobile-web-app-capable" content="yes"> 
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" / >
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 </head>
 
 <body>
-  <!-- For the lowercasing options easter egg -->
-	<div id = "charlieoptionbox"></div>	  
-  <!-- the pausing modal stuff from bootstrap -->
   <div class="modal " id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div id="modal_why" class="modal-dialog" data-dismiss="modal" onclick="pausegame();">
       <div id = "pausemodal" class="modal-content"></div>
     </div>
   </div>
-  <!-- the header text -->
+
   <div id="header2">
-      <div id="title"><span style="vertical-align:middle;">trendquiz:</span><br id="phonebr" style="display:none;"> <span id="smallheadtext"> every graph is a story</span></div>
+      <div id="title"><span style="vertical-align:middle;">Trendquiz</span></div>
   </div>
  
-  <!-- score and pause -->
   <div id = "gamecontrols">
     <div id = "score">Score: <span class="TQnum" id="scorenums"></span></div>
-    <div id="pausebutton"> Pause </div>
-  <!-- the game timer -->
+    <div id="pausebutton">Pause</div>
   <div id="timercontainer">
-    <div id="timer" class="TQnum" style="color:black;"></div>
+    <div id="timer"></div>
   </div>
   </div>
-  <!-- the chart and chart title -->
   <div id = "chartcontainer"></div>
-  <!-- the quiz option buttons -->
   <div id="LRcontainer">
-      <div class="gameButton" id="leftanswer"><span id="leftanswertext">Left </span><span class="beam"></span><span id="leftafter"></span>  </div>
-      <div class="gameButton" id="rightanswer"><span id="rightanswertext">Right </span><span class="beam"></span><span id="rightafter"></span> </div>
+      <div class="gameButton" id="leftanswer"><span id="leftanswertext" class='answer'>Left </span></div>
+      <div class="gameButton" id="rightanswer"><span id="rightanswertext" class='answer'>Right </span></div>
   </div>
   <div id = "strikes">
-      <!--
-      <span>
-      Strikes:
-      </span>
-  -->
       <p id="strike0" class="good" style="display:inline;">&#10003;</p>
       <p id="strike1" class="good" style="display:inline;">&#10003;</p>
       <p id="strike2" class="good" style="display:inline;">&#10003;</p>
   </div>
 
-  <!-- this has to be the last element before the footer. that's why it was moving the buttons. -->
   <div id="pausetext">
       GAME IS PAUSED <br>
       <span style="font-size:0.5em;">Click or press space to unpause</span>
@@ -66,18 +52,14 @@
   <div id="popuptext">
       +<span class="TQnum" id="points">ERROR</span>
   </div>
-  <!-- the footer -->
-  <footer id = "footer"><a  href = "http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2014</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank"> Donate</a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a>
+  <footer id = "footer"><a  href = "http://ebcmsoftware.com" target="_blank">&copy; EBCM Software 2015</a> | <a href = "http://ebcmsoftware.com/donate/" target = "_blank"> Donate</a> | Data Source: <a href="http://google.com/trends" target="_blank">Google Trends</a>
   </footer>
 
-  </body>	
-  <!-- plugins and shite -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
   <script src="../scripts/highcharts.js"></script>
   <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
-  <!-- game data -->
-  <script type="text/javascript" src="../game_data/data2.js" ></script>
 
+  <script type="text/javascript" src="../game_data/data2.js" ></script>
   <script type="text/javascript" src="../game_data/visualmedia.js" ></script>
   <script type="text/javascript" src="../game_data/internet_memes.js" ></script>
   <script type="text/javascript" src="../game_data/misc_seasonal.js" ></script>
@@ -87,9 +69,8 @@
   <script type="text/javascript" src="../game_data/intl_sports.js" ></script>
   <script type="text/javascript" src="../game_data/sports.js" ></script>
   <script type="text/javascript" src="../game_data/music.js" ></script>
-  <!-- load the data into the game -->
   <script type="text/javascript" src ="../game_data/loaddata.js" ></script>
-  <!-- our actual code for the game -->
   <script src="../scripts/index.js"></script>
   <script type="text/javascript" src ="../scripts/script.js"></script>
+</body>	  
 </html>
