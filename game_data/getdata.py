@@ -4,9 +4,6 @@ import sys
 import urllib
 import urllib2
 
-#u = 'tuftswhistling'
-#p = 'horsebatterystaple'
-
 u = 'ebcmdev2'
 p = 'horsebatterystaple'
 

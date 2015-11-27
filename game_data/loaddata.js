@@ -2,7 +2,6 @@ var america = localStorage['america'];
 if (america === undefined) america = 'true';
 
 var categorylist = localStorage.getItem('categorylist').split(" ");
-//i'm doing this in case they somehow get linked to /index without first visiting /trendquiz
 if (!categorylist || categorylist == '') 
     window.location.assign('/');
 
@@ -19,7 +18,6 @@ if (america == "false") {
     topicsArray = topicsArray.filter(function(elt) {
         return elt.america;
     });
-    //this is jank as heck
     if (categorylist.indexOf("sports") > -1) topicsArray = topicsArray.concat(intl_sports);
 }
 
