@@ -1,5 +1,5 @@
 var toggle = false;
-//function for trendquiz.html
+
 function selectAll() {
   var button = document.getElementById('categorysettings').firstChild.nextSibling;
   while (button) {
@@ -21,15 +21,13 @@ if (categorylist) {
     var split_arr = categorylist.split(' ');
     split_arr.forEach(function(category) {
         var input = document.getElementById(category)
-        console.log(category);
-        console.log(input);
         input.checked = true;
         input.parentNode.className = 'btn btn-primary active';
     });
 }
 var america = localStorage['america'];
 if (america != undefined && (america == 'false' || america == false)) {
-    document.getElementById('myonoffswitch').checked = false;
+    document.getElementById('international-switch').checked = false;
 }
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,21 +40,20 @@ ga('send', 'pageview');
 
 localStorage['score'] = 0;
 localStorage['num_answered'] = 0;
+localStorage['america'] = $('#international-switch').attr("checked");
 
-localStorage['america'] = document.getElementById('myonoffswitch').checked;
-
-document.getElementById('myonoffswitch').addEventListener('click', function(){
-    localStorage['america'] = document.getElementById('myonoffswitch').checked;
+$('#international-switch').click(function(){
+    localStorage['america'] = $(this).arr("checked");
 });
 
-document.getElementById('select_all').addEventListener('click', selectAll);
+$('#select_all').click(selectAll);
 
-document.getElementById('playbutton').addEventListener('click', function () {
+$('#playbutton').click(function () {
       var categorylist = '';
       var checkboxes = document.getElementsByTagName("input");
       var len = checkboxes.length;
       for (var i=0; i < len; i++) {
-          if (checkboxes[i].type == "checkbox" && checkboxes[i].checked && checkboxes[i].id != 'myonoffswitch') {
+          if (checkboxes[i].type == "checkbox" && checkboxes[i].checked && checkboxes[i].id != 'international-switch') {
               categorylist += checkboxes[i].id + " ";
           }
       }

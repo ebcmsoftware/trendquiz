@@ -1,79 +1,80 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>trendquiz</title>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<title>Trendquiz</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 <link rel="icon" type="image/ico" href="images/favicontrend.ico">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="themes/reset.css">
-<link href='themes/raleway.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="themes/style.css">
-<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<meta property="og:image" content="http://trendquiz.com/data/logo.png"> <!-- for thumbnails -->
-<link rel="stylesheet" media="screen and (max-device-width: 600px) and (orientation : portrait)" href="themes/phonestyle.css"/>
+<meta property="og:image" content="http://trendquiz.com/images/logo.png">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="themes/phonestyle.css">
 </head>
 
 <body>
-
 <div id="header2" class="header"> 
-    <div id="title"><span style="vertical-align:middle;">trendquiz:</span> <span id="smallheadtext"> every graph is a story</span></div>
+  <div id="title">
+    <span style="vertical-align:middle;">Trendquiz</span> <span id="smallheadtext">Every graph is a story</span> 
+  </div>
 </div>
 
-<img src="data/logo.png" style="display:none;">
+<img src="images/logo.png" alt="trendquiz logo" style="display:none;">
 
 <div id="descriptivetext">
-    <h1 style="font-size: 1.3em; margin: 10px 0 10px 0; text-align: left;"> trendquiz has 3 rules:</h1> 
-    <ol id = "rules" style = "text-align:left">
-        <li>1. get points for choosing correct search term</li> 
-        <li>2. get a strike for choosing wrong term</li> 
-        <li>3. get three strikes and it's game over</li>
-    </ol>  
+  <h1 style="font-size: 1.3em; margin: 10px 0 10px 0; text-align: left;">Trendquiz has 3 rules:</h1> 
+  <ol id="rules" style="text-align:left">
+    <li>1. Get points for choosing correct search term</li> 
+    <li>2. Get a strike for choosing wrong term</li> 
+    <li>3. Get three strikes and it's game over</li>
+  </ol>  
 </div>
 
-<p id = "categorytext" style="text-align: center; margin-top: 15px">select some categories:</p>
-<center>
-    <div id = "categorystuff">    
-        <div id="categorysettings" class="btn-group" data-toggle="buttons">
-            <label class="btn btn-primary"><input type="checkbox" id="politics" >politics</label>
-            <label class="btn btn-primary"><input type="checkbox" id="sports" >sports</label>
-            <label class="btn btn-primary"><input type="checkbox" id="tech" >technology</label>
-            <label class="btn btn-primary"><input type="checkbox" id="games" >games</label>
-            <label class="btn btn-primary"><input type="checkbox" id="internet_memes" >internet</label>
-            <label class="btn btn-primary"><input type="checkbox" id="visualmedia" >movies and tv</label>
-            <label class="btn btn-primary"><input type="checkbox" id="music" >music</label>
-            <label class="btn btn-primary"><input type="checkbox" id="misc_seasonal" >other</label>
-        </div>
-
-        <div id = "selectallbutton" class="btn-group btn-group-justified" data-toggle="buttons">
-            <label class="btn btn-primary" id="select_all"><input type="checkbox">select all</label>
-        </div>
-        <br><br>
-        <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-            <label class="onoffswitch-label" for="myonoffswitch">
-                <span class="onoffswitch-inner"></span>
-                <span class="onoffswitch-switch"></span>
-            </label>
-        </div>
-        <br><br><br><br>
-        <div id="playbutton" class="gameButton">  play!  </div>
-        <script src="scripts/trendquiz.js"></script>
-        <p id = "controltext" style="position:relative;margin: 0 auto;font-size:2em;text-align:center;">
-        <span  style = "font-size:1.3em;">Controls:</span> use arrow keys or the mouse to select answers, and hit space to pause.
-        </p>
-	<h2>Warning: This game is super buggy! Works best on Chrome on Desktop, everywhere else play at your own risk</h2>
+<p id="categorytext" style="text-align: center; margin-top: 15px">Select some categories:</p>
+<div style='text-align:center; padding: 0px;'>
+  <div id = "categorystuff">    
+    <div id="categorysettings" class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary"><input type="checkbox" id="politics">Politics</label>
+        <label class="btn btn-primary"><input type="checkbox" id="sports">Sports</label>
+        <label class="btn btn-primary"><input type="checkbox" id="tech">Technology</label>
+        <label class="btn btn-primary"><input type="checkbox" id="games">Games</label>
+        <label class="btn btn-primary"><input type="checkbox" id="internet_memes">Internet</label>
+        <label class="btn btn-primary"><input type="checkbox" id="visualmedia">Movies and TV</label>
+        <label class="btn btn-primary"><input type="checkbox" id="music">Music</label>
+        <label class="btn btn-primary"><input type="checkbox" id="misc_seasonal">Other</label>
     </div>
-</center>
 
+    <div id = "selectallbutton" class="btn-group btn-group-justified" data-toggle="buttons">
+        <label class="btn btn-primary" id="select_all"><input type="checkbox">Select all</label>
+    </div>
+  </div>
+<!--     <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="international-switch" checked>
+      <label class="onoffswitch-label" for="international-switch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div> -->
+    <!-- <br><br><br><br> -->
+    <p id="controltext" style="position:relative;margin: 0 auto;font-size:2em;text-align:center;">
+      Use arrow keys or the mouse to select answers, and hit space to pause.
+    </p>
+
+    <div id="playbutton" class="gameButton">Play</div>
+</div>
 <footer id="footer">
-    <a href="http://ebcmsoftware.com">&copy; EBCM Software 2015</a> | 
-    <a href = "http://ebcmsoftware.com/donate/"> Donate </a> | 
-    Data Source: <a href="http://google.com/trends">Google Trends</a> | 
-    <a href="game/about.html" id="aboutpage">About Trendquiz</a>
+  <a href="http://ebcmsoftware.com">&copy; EBCM Software 2015</a> | 
+  <a href = "http://ebcmsoftware.com/donate/"> Donate </a> | 
+  Data Source: <a href="http://google.com/trends">Google Trends</a>
 </footer>
-<script type="text/javascript" src="scripts/script.js"></script>
+
+<script src="scripts/trendquiz.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
 </body>
+
+
 
 </html>
