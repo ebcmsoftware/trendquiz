@@ -7,8 +7,7 @@
     font-size:2em;
 }
 
-footer,
-#footer{
+footer, #footer{
   display: none !important;
 }
 
@@ -26,12 +25,12 @@ footer,
   white-space: normal;
 }
 
-.btn-primary{
+.btn-primary {
     font-size: 100%;
     border-radius: 0px;
 }
 
-body{
+body {
   color: #EEF2F3;
   background-color: #3698d9;
   font-family:'Raleway' , sans-serif;
@@ -65,7 +64,7 @@ body{
   display: none;
   font-size: 1.2em;
   margin: 0 auto;
-  width:; 95%;
+  width: 95%;
   padding:0;
 }
 
@@ -119,14 +118,6 @@ body{
   float: top;
 }
 
-#stats{
-  width: 100%;
-}
-
-#endtext{
-  width: 95%;
-}
-
 #pausebutton {
   float: right;
   text-align: right;
@@ -154,13 +145,19 @@ body{
 
 #endtext{
   float: left;
-  width: 60%;
+  width: 100%;
   margin: 15px auto 0 auto;
   font-size: 1.5em;
 }
 
-/* eric's perfect code */
-.blink {
-    display:none !important;
+#SSr {
+  display: none;
 }
+
+#SSl {
+  float:left;
+  width: 100%;
+}
+
+
 
